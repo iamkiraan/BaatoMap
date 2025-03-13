@@ -70,4 +70,11 @@ dependencies {
     //working with mapLibre
     implementation(libs.android.sdk.v1100)
 
+    //api calling ko lagi retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    //for fetching the user location
+    implementation(libs.play.services.location.v2101)
+
 }
