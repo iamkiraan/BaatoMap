@@ -18,6 +18,11 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    defaultConfig {
+        multiDexEnabled = true
+    }
+
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -27,6 +32,8 @@ android {
             )
         }
     }
+
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -59,4 +66,8 @@ dependencies {
 
     implementation(libs.androidx.material.icons.core)
     implementation(libs.androidx.material.icons.extended)
+
+    //working with mapLibre
+    implementation(libs.android.sdk.v1100)
+
 }
